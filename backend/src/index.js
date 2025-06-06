@@ -4,8 +4,8 @@ import dotenv from "dotenv";
 import { connectDB } from "./lib/db.js";
 import authRoutes from "./routes/auth.route.js";
 
-
 const app = express();
+app.use(express.urlencoded({ extended: true }));
 dotenv.config(); // Make sure this is before any env variable access
 const PORT = process.env.PORT;
 
