@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useAuthStore } from "../store/useAuthStore";
-import AuthImagePattern from "../components/AuthImagePattern";
+import LoginLeftCards from "../components/LoginLeftCards";
 import { Link } from "react-router-dom";
 import { Eye, EyeOff, Loader2, Lock, Mail, MessageSquare } from "lucide-react";
 
@@ -108,11 +108,12 @@ const LoginPage = () => {
         </div>
       </div>
 
-      {/* Right Side - Image/Pattern */}
-      <AuthImagePattern
-        title={"Welcome back!"}
-        subtitle={"Sign in to continue your conversations and catch up with your messages."}
+      <div style={{ display: 'flex' }}>
+      <LoginLeftCards
+        // title={"Welcome back!"}
+        // subtitle={"Sign in to continue your conversations and catch up with your messages."}
       />
+      </div>
     </div>
   );
 };
