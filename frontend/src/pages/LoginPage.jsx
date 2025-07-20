@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { useAuthStore } from "../store/useAuthStore";
-import LoginLeftCards from "../components/LoginLeftCards";
 import { Link } from "react-router-dom";
 import { Eye, EyeOff, Loader2, Lock, Mail, MessageSquare } from "lucide-react";
 
@@ -18,9 +17,9 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="h-screen grid lg:grid-cols-2">
+    <div className="min-h-screen flex items-center justify-center p-6 sm:p-12">
       {/* Left Side - Form */}
-      <div className="flex flex-col justify-center items-center p-6 sm:p-12">
+      <div className="h-screen flex items-center justify-center p-6 sm:p-12">
         <div className="w-full max-w-md space-y-8">
           {/* Logo */}
           <div className="text-center mb-8">
@@ -106,13 +105,6 @@ const LoginPage = () => {
             </p>
           </div>
         </div>
-      </div>
-
-      <div style={{ display: 'flex' }}>
-      <LoginLeftCards
-        // title={"Welcome back!"}
-        // subtitle={"Sign in to continue your conversations and catch up with your messages."}
-      />
       </div>
     </div>
   );
