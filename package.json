@@ -1,0 +1,13 @@
+{
+  "name": "chat-application",
+  "version": "1.0.0",
+  "description": "This chat web application is made using MERN stack. The project is not yet complete and I am still completing it now. I am learniing MERN stack as I am completing the project.I would add some additional features in the end.",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
+    "start": "npm run start --prefix backend"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
